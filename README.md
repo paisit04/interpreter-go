@@ -2,10 +2,11 @@
 
 ```
 $ go run main.go
->> let x = 1 * 2 * 3 * 4 * 5
-let x = ((((1 * 2) * 3) * 4) * 5);
->> x * y / 2 + 3 * 8 - 123
-((((x * y) / 2) + (3 * 8)) - 123)
->> true == false
-(true == false)
+>> let add = fn(a, b) { a + b };
+>> let sub = fn(a, b) { a - b };
+>> let applyFunc = fn(a, b, func) { func(a, b) };
+>> applyFunc(2, 2, add);
+4
+>> applyFunc(10, 2, sub);
+8
 ```
